@@ -1,11 +1,11 @@
 {
-  "com_chain_id": 31337,
-  "com_chain_ws_url": "ws://127.0.0.1:8545/",
-  "com_chain_http_url": "http://127.0.0.1:8545/",
-  "gateway_contract_addr": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
-  "job_contract_addr": "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
+  "com_chain_id": 421614,
+  "com_chain_ws_url": "wss://arb-sepolia.g.alchemy.com/v2/cFwacd_RbVpNrezyxZEvO6AnnCuO-kxt",
+  "com_chain_http_url": "https://sepolia-rollup.arbitrum.io/rpc",
+  "gateway_contract_addr": "0x819d9b4087D88359B6d7fFcd16F17A13Ca79fd0E",
+  "job_contract_addr": "0xAc6Ae536203a3ec290ED4aA1d3137e6459f4A963",
   "enclave_secret_key": "./enclave_secret_key",
   "enclave_public_key": "./enclave_public_key",
   "epoch": 1713433800,
-  "time_interval": 20
+  "time_interval": 300
 }

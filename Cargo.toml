@@ -12,6 +12,7 @@ async-recursion = "1.1.0"
 bytes = "1.6.0"
 clap = { version = "4.5.3", features = ["derive"] }
 config = "0.14.0"
+env_logger = "0.11.3"
 ethers = { git = "https://github.com/gakonst/ethers-rs", features = ["ws", "rustls", "abigen"] }
 hex = "0.4.3"
 k256 = "0.13.3"

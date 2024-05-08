@@ -11,6 +11,7 @@ use actix_web::web::Data;
 use actix_web::{App, HttpServer};
 use anyhow::Context;
 use clap::Parser;
+use env_logger::Env;
 use ethers::prelude::*;
 use ethers::providers::Provider;
 use k256::ecdsa::SigningKey;
@@ -40,6 +41,7 @@ struct Cli {
 
 #[tokio::main]
 pub async fn main() -> Result<(), Box<dyn Error>> {
+    env_logger::Builder::from_env(Env::default().default_filter_or("info")).init();
     // Load the configuration file
     let args = Cli::parse();
     let config_manager = ConfigManager::new(&args.config_file);
